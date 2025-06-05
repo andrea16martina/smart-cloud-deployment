@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.SideBarLeft {
+  width: 250px;
+  background-color: #f8f9fa;
+  overflow: auto;
+}
+
+.App-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

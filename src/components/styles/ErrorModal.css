@@ -1,0 +1,89 @@
+.error-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.error-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px solid #edda8a; /* Bordo giallo per indicare un avviso */
+  transform: scale(0.9);
+  animation: scaleIn 0.3s forwards;
+}
+
+.error-modal h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #edda8a; /* Titolo giallo per indicare un avviso */
+}
+
+.error-modal p {
+  font-size: 18px;
+  color: #666;
+  margin: 20px 0;
+}
+
+.error-modal button {
+  background-color: #edda8a; /* Bottone giallo per indicare un avviso */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-modal button:hover {
+  background-color: #e6b800;
+}
+
+@media (max-width: 600px) {
+  .error-modal {
+    padding: 20px;
+  }
+
+  .error-modal h2 {
+    font-size: 20px;
+  }
+
+  .error-modal p {
+    font-size: 16px;
+  }
+
+  .error-modal button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

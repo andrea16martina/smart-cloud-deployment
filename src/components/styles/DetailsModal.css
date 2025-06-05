@@ -1,0 +1,160 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  max-height: 90vh; /* Ensure the modal is fully visible */
+  overflow-y: auto; /* Add scroll if content overflows */
+  transform: translateY(-500px);
+  animation: slideIn 0.3s forwards;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.no-overflow{
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: white;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.modal-field {
+  margin-bottom: 20px;
+}
+
+.modal-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.modal-field input,
+.modal-field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.modal-field input:focus,
+.modal-field textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #0056b3;
+}
+
+.security-requirement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.security-requirement label {
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.security-requirements-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the security requirements */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+
+  .modal-field input,
+  .modal-field textarea {
+    font-size: 14px;
+  }
+
+  .modal-footer button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
