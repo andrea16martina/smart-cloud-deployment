@@ -74,5 +74,18 @@ npm run build
 
 ---
 
+## 👤 Author
+
+**Andrea Martina**  
+Computer Science for Digital Communication graduate  
+🌐 [GitHub](https://github.com/andrea16martina) | [LinkedIn](https://linkedin.com/in/andmar-7137a41aa)  
+
+If you found this project useful or inspiring, feel free to ⭐ star the repo and connect!
+
+---
+
+## 📜 License
+This project is licensed under the MIT License — see the [License](./LICENSE) file for details.
+
 
 
