@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# ☁️ Smart Cloud Deployment UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Interactive drag-and-drop interface for designing cloud-edge service workflows.**  
+Built with React and [React Flow Renderer](https://reactflow.dev/), this project enables users to visually organize and deploy composite services using a graph-based model.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Overview
 
-### `npm start`
+This project provides a graphical user interface to create and manage service workflows.  
+Users can drag and drop services into a canvas, connect them to define data flow, and set logic through conditional switch nodes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All functionalities are accessible via a sidebar panel, while the central canvas area offers a dynamic and interactive experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> 🧩 Designed as part of my university internship, this tool demonstrates a visual approach to service orchestration across cloud and edge environments.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+- 🧱 **Drag & Drop Workflow Creation** — intuitive UI for composing services
+- 🔁 **Conditional Nodes** — define logic with switch-type decision flows
+- ⚙️ **Custom Node Details** — user-editable metadata per node
+- 🎛️ **Sidebar Configuration Panel** — manage and edit node properties
+- 🖥️ **Interactive Canvas** — rearrange and link services visually
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```plaintext
+smart-cloud-deployment/
+├── public/               # Static assets
+├── src/                  # Main React source code
+│   ├── components/       # UI components and custom nodes
+│   ├── hooks/            # Custom React hooks
+│   └── App.jsx           # Main app entry
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ⚛️ **React** — frontend library for building dynamic interfaces  
+- 🌊 **React Flow Renderer** — for graph-based UI and node manipulation  
+- 📦 **JavaScript (ES6+)** — modern scripting for component logic  
+- 🎨 **CSS Modules / Tailwind** *(if used)* — styling solutions  
+- 🔧 **Vite / Webpack** *(depending on setup)* — module bundlers for development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔧 Setup
 
-## Learn More
+```bash
+# Clone the repository
+git clone https://github.com/andrea16martina/smart-cloud-deployment.git
+cd smart-cloud-deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Start the development server
+npm start
+# → App available at http://localhost:3000
 
-### Code Splitting
+# Build for production
+npm run build
+```
+> ⚠️ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed globally on your system.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
